@@ -14,9 +14,9 @@ app.use((req, res, next) => {
   const allowed = [
     "https://scantohalal.com",
     "https://www.scantohalal.com",
+    "https://scantohalal.com/scanner",  // ← add this too
     "http://localhost:5173",
     "http://localhost:4173",
-    "http://127.0.0.1:5173",
   ];
 
   if (!origin || allowed.includes(origin)) {
